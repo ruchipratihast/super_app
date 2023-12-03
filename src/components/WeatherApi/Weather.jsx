@@ -35,13 +35,17 @@ const Weather = () => {
 
     // Map Weather Icons based on the weather condition
     const getWeatherIcon = (conditionCode) => {
+        console.log("hiiiiiiiiii")
+        console.log(conditionCode)
         switch (conditionCode) {
             case 1000:
                 return 'wi-day-sunny'; // Clear sky
             case 1003:
                 return 'wi-day-cloudy'; // Partly cloudy
             case 1006:
-                return 'wi-cloudy'; // Cloudy
+                return 'wi-cloudy';// Cloudy
+            case 1063:
+                return 'wi-rain';
             case 1189:
             case 1192:
             case 1195:
@@ -77,10 +81,10 @@ const Weather = () => {
                 </div>
 
             </div>
-            <hr/>
+            <hr />
             <div className={styles.windHumidityInfo}>
                 <div className={styles.humidityInfo}>
-                    <div>        
+                    <div>
                         <img src={windLogo} alt="Windlogo" />
                     </div>
                     <div>
@@ -88,18 +92,18 @@ const Weather = () => {
                         <p>Wind</p>
                     </div>
                 </div>
-               
+
                 <div className={styles.windInfo}>
                     <div>
                         <img src={humidityLogo} alt="Humiditylogo" />
                     </div>
-                    
+
                     <div>
                         <p> {weatherData.current.humidity}%</p>
                         <p>Humidity</p>
                     </div>
-               </div>
-                
+                </div>
+
             </div>
         </div>
     );

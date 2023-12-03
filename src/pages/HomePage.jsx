@@ -3,7 +3,7 @@ import styles from "./HomePage.module.css"
 import ProfileInfo from '../components/Profile/ProfileInfo'
 import Datetime from '../components/DateTime/Datetime'
 import Weather from '../components/WeatherApi/Weather'
-// import NewsCard from '../components/NewsApi/NwesCard'
+import NewsCard from '../components/NewsApi/NwesCard'
 // import Notes from '../components/notes/Notes';
 // import Timer from '../components/Timer/Timer';
 // import BrowseBtn from '../components/BrowseBtn/BrowseBtn'
@@ -34,8 +34,8 @@ const HomePage = () => {
         </div>
 
         <div className={styles.rightCard}>
-          {/* <NewsCard/>
-          <BrowseBtn/> */}
+          <NewsCard/>
+          {/* <BrowseBtn/> */}
         </div> 
             
       </div>
