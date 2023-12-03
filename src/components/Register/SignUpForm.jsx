@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import styles from "./Form.module.css";
+import { useNavigate } from 'react-router-dom';
 
 const SignUpForm = () => {
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     name: '',
     username: '',
@@ -61,9 +64,10 @@ const SignUpForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    if (validateForm()) {
-      localStorage.setItem('registrationData', JSON.stringify(formData));
+        
+    if(validateForm()){
+      localStorage.setItem('registrationData',JSON.stringify(formData));
+      navigate('/selectcategory');
     }
   };
 
