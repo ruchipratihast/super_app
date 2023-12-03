@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from "./HomePage.module.css"
 import ProfileInfo from '../components/Profile/ProfileInfo'
-// import Datetime from '../components/DateTime/Datetime'
-// import Weather from '../components/WeatherApi/Weather'
+import Datetime from '../components/DateTime/Datetime'
+import Weather from '../components/WeatherApi/Weather'
 // import NewsCard from '../components/NewsApi/NwesCard'
 // import Notes from '../components/notes/Notes';
 // import Timer from '../components/Timer/Timer';
@@ -19,8 +19,8 @@ const HomePage = () => {
                 <ProfileInfo/>
               </div>
               <div>
-                {/* <Datetime/>
-                <Weather/> */}
+                <Datetime/>
+                <Weather/>
               </div>
             </div>
             <div className={styles.notesCard}>
