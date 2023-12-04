@@ -4,7 +4,7 @@ import ProfileInfo from '../components/Profile/ProfileInfo'
 import Datetime from '../components/DateTime/Datetime'
 import Weather from '../components/WeatherApi/Weather'
 import NewsCard from '../components/NewsApi/NwesCard'
-// import Notes from '../components/notes/Notes';
+import Notes from '../components/notes/Notes';
 // import Timer from '../components/Timer/Timer';
 // import BrowseBtn from '../components/BrowseBtn/BrowseBtn'
 
@@ -24,7 +24,7 @@ const HomePage = () => {
               </div>
             </div>
             <div className={styles.notesCard}>
-              {/* <Notes/> */}
+              <Notes/>
             </div>
           </div>
 
