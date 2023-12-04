@@ -5,7 +5,7 @@ import Datetime from '../components/DateTime/Datetime'
 import Weather from '../components/WeatherApi/Weather'
 import NewsCard from '../components/NewsApi/NwesCard'
 import Notes from '../components/notes/Notes';
-// import Timer from '../components/Timer/Timer';
+import Timer from '../components/Timer/Timer';
 // import BrowseBtn from '../components/BrowseBtn/BrowseBtn'
 
 const HomePage = () => {
@@ -17,12 +17,13 @@ const HomePage = () => {
             <div className={styles.profileDateTime}>
               <div>
                 <ProfileInfo/>
-              </div>
-              
+              </div>   
+
               <div>
                 <Datetime/>
                 <Weather/>
               </div>
+
             </div>
             <div className={styles.notesCard}>
               <Notes/>
@@ -30,7 +31,7 @@ const HomePage = () => {
           </div>
 
           <div className={styles.leftBottomCard}>
-            {/* <Timer/>  */}
+            <Timer/> 
           </div>
         </div>
 
