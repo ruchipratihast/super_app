@@ -18,6 +18,7 @@ const HomePage = () => {
               <div>
                 <ProfileInfo/>
               </div>
+              
               <div>
                 <Datetime/>
                 <Weather/>
