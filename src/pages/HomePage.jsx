@@ -6,7 +6,7 @@ import Weather from '../components/WeatherApi/Weather'
 import NewsCard from '../components/NewsApi/NwesCard'
 import Notes from '../components/notes/Notes';
 import Timer from '../components/Timer/Timer';
-// import BrowseBtn from '../components/BrowseBtn/BrowseBtn'
+import BrowseBtn from '../components/BrowseBtn/BrowseBtn'
 
 const HomePage = () => {
   return (
@@ -37,7 +37,7 @@ const HomePage = () => {
 
         <div className={styles.rightCard}>
           <NewsCard/>
-          {/* <BrowseBtn/> */}
+          <BrowseBtn/>
         </div> 
             
       </div>
