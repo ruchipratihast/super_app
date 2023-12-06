@@ -19,7 +19,8 @@ const NewsCard = () => {
     const fetchNews = async () => {
       try {
         const apiKey = 'a0c975056bd9469eacf68a9429113a96';
-        const apiUrl = `https://newsapi.org/v2/everything?q=tesla&from=2023-10-27&sortBy=publishedAt&apiKey=${apiKey}`;
+        // const apiUrl = `https://newsapi.org/v2/everything?q=tesla&from=2023-10-27&sortBy=publishedAt&apiKey=${apiKey}`;
+        const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&apiKey=ffd1b1a6599e42fdb4b6d6617d83b5a8`;
         const response = await axios.get(apiUrl);
         setNewsData(response.data.articles);
       } catch (error) {
